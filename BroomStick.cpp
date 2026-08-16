@@ -5,9 +5,11 @@ void BroomStick::move(){
     std::cout<<" moving by BROOMSTICK "<<std::endl;
 }
 
-void BroomStick::moveFaster(){
-    ///incrementing steps even faster?
-    std::cout<<" moving by BROOMSTICK even faster  "<<std::endl;
+void BroomStick::moveFaster(Traveller* t){
+
+    std::cout<<" moving by BROOMSTICK even faster  (summoning Dragon)"<<std::endl;
+    t->changeMode(new Dragon);
+
 }
 
-BroomStick::~Broomstick(){}
+BroomStick::~BroomStick(){}

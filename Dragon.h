@@ -6,7 +6,7 @@
 class Dragon : public Mode{
     public:
         void move() override;
-        void moveFaster() override;
+        void moveFaster(Traveller*) override;
         ~Dragon() override;
 };
 

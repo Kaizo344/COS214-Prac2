@@ -6,9 +6,11 @@ void Horse::move(){
 }
 
 
-void Horse::moveFaster(){
-    ///increment steps even faster
-    std::cout<<" moving by HORSES even faster "<<std::endl;
+void Horse::moveFaster(Traveller* t){
+
+    std::cout<<" moving by HORSE even faster  (summoning Wagon)"<<std::endl;
+    t->changeMode(new Wagon);
+
 }
 
 Horse::~Horse(){}

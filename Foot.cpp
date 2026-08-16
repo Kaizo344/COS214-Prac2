@@ -5,9 +5,11 @@ void Foot::move(){
     std::cout<<" walking by FOOT "<<std::endl;
 }
 
-void Foot::moveFaster(){
-    ///incrementing steps even faster?
-    std::cout<<" walking by FOOT even faster  "<<std::endl;
+void Foot::moveFaster(Traveller* t){
+
+    std::cout<<" moving by FOOT even faster  (summoning Horse)"<<std::endl;
+    t->changeMode(new Horse);
+
 }
 
 Foot::~Foot(){}

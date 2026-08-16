@@ -1,16 +1,21 @@
 #ifndef TRAVELLER_H
 #define TRAVELLER_H
-#include "Mode.h"
 
+class Mode;
+class Foot;
 
+///TODO change return type of changeMode
+///ownership of State class handled by Traveller
 class Traveller {
     private:
         Mode* state;
+        Traveller(); ///hidden so as to enforce correct Traveller construction
     public:
-        Mode* changeMode(Mode*);
+        Traveller(Mode* m);
+        void changeMode(Mode*);
         void moveTravller();
-        void moveTravllerFaster();
-        virtual ~Traveller();
+        void moveTravellerFaster();
+        ~Traveller();
 };
 
 #endif
