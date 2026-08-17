@@ -240,7 +240,6 @@ int main()
     std::cout << std::endl
               << "Testing GameManager::run():" << std::endl;
     // GameManager needs trip, traveller, worldRoot, and biomeFactory set to run properly
-    // For coverage purposes, we call it here
     gm->run();
 
     delete gm; // Will delete the current factory (OceanFactory)
