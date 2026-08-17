@@ -15,4 +15,4 @@ class BiomeFactory
         virtual Obstacle* createObstacle() = 0;
 };
 
-#endif BIOMEFACTORY_H
+#endif // BIOMEFACTORY_H
