@@ -2,10 +2,11 @@
 #define DRAGONDECORATOR_H
 
 #include "MapElementDecorator.h"
+#include <string>
 
 class DragonDecorator: public MapElementDecorator{
     public:
-        DragonDecorator(MapElement*);
+        DragonDecorator(MapElement*, std::string);
         std::string print() override;
         int getNumDragons();
         ~DragonDecorator() override;

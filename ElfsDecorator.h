@@ -5,7 +5,7 @@
 
 class ElfsDecorator: public MapElementDecorator{
     public:
-        ElfsDecorator(MapElement*);
+        ElfsDecorator(MapElement*, std::string);
         std::string print() override;
         ~ElfsDecorator() override;
 };

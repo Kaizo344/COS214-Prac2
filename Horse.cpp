@@ -1,7 +1,7 @@
 #include "Horse.h"
 
 void Horse::move(){
-    ///increment steps
+    ///increment step
     std::cout<<" moving by HORSE "<<std::endl;
 }
 

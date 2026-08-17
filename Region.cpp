@@ -21,4 +21,10 @@ void Region::add(MapElement* m){
     mapElements.push_back(m);
 }
 
-Region::~Region(){}
+Region::~Region(){
+    for(MapElement* e : mapElements){
+        if (e != nullptr)
+            delete e;
+    }
+
+}

@@ -1,6 +1,6 @@
 #include "DragonDecorator.h"
 
-DragonDecorator::DragonDecorator(MapElement* m):MapElementDecorator(m){}
+DragonDecorator::DragonDecorator(MapElement* m, std::string s):MapElementDecorator(m,s){}
 
 
 std::string DragonDecorator::print(){

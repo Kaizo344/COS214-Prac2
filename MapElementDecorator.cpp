@@ -1,6 +1,6 @@
 #include "MapElementDecorator.h"
 
-MapElementDecorator::MapElementDecorator(MapElement* m){
+MapElementDecorator::MapElementDecorator(MapElement* m, std::string s):MapElement(s) {
     if (m == nullptr){
         elem = nullptr;
         return;

@@ -1,6 +1,6 @@
 #include "RainDecorator.h"
 
-RainDecorator::RainDecorator(MapElement* m):MapElementDecorator(m){}
+RainDecorator::RainDecorator(MapElement* m, std::string s):MapElementDecorator(m,s){}
 
 
 std::string RainDecorator::print(){

@@ -1,6 +1,6 @@
 #include "ElfsDecorator.h"
 
-ElfsDecorator::ElfsDecorator(MapElement* m):MapElementDecorator(m){}
+ElfsDecorator::ElfsDecorator(MapElement* m, std::string s):MapElementDecorator(m,s){}
 
 
 std::string ElfsDecorator::print(){

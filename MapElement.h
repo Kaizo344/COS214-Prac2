@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-class MapElement{
+class MapElement {
     protected:
         std::string name;
     public:

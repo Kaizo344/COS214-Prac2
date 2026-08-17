@@ -5,7 +5,7 @@
 
 class RainDecorator: public MapElementDecorator{
     public:
-        RainDecorator(MapElement*);
+        RainDecorator(MapElement*, std::string);
         std::string print() override;
         ~RainDecorator() override;
 

@@ -8,7 +8,7 @@ class MountainDecorator: public MapElementDecorator{
         static int totalMountains;
         std::string getMountainType();
     public:
-        MountainDecorator(MapElement*);
+        MountainDecorator(MapElement*, std::string);
         std::string print() override;
         ~MountainDecorator() override;
 };
