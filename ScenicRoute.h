@@ -9,7 +9,7 @@
 class ScenicRoute : public RouteStrategy
 {
     public:
-        void calculateRoute() overide;
+        void calculateRoute() override;
 };
 
 #endif // SCENICROUTE_H

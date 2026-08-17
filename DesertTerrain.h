@@ -7,7 +7,8 @@
 // Concrete Products
 class DesertTerrain : public Terrain
 {
-    public : 
+    public:
+        ~DesertTerrain() {} 
         void display() override;
 };
 

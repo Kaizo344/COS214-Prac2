@@ -11,9 +11,9 @@ class Trip
         RouteStrategy* strategy;
     public:
         Trip(RouteStrategy* initialStrategy = nullptr);
+        ~Trip();
         void planRoute();
         void setStrategy(RouteStrategy* s);
-        ~Trip();
 };
 
 #endif // TRIP_H

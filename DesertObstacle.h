@@ -8,6 +8,7 @@
 class DesertObstacle : public Obstacle 
 {
     public:
+        ~DesertObstacle() {}
         void overcome() override;
 };
 

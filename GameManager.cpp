@@ -4,7 +4,7 @@
 GameManager::GameManager() : trip(nullptr), traveller(nullptr), worldRoot(nullptr), biomeFactory(nullptr)
 {}
 
-GameManager::~Gamemanager()
+GameManager::~GameManager()
 {
     if(trip != nullptr)
     {
@@ -18,7 +18,7 @@ GameManager::~Gamemanager()
     }
     if(worldRoot != nullptr)
     {
-        delete worlRoot;
+        delete worldRoot;
         worldRoot = nullptr;
     }
     if(biomeFactory != nullptr)

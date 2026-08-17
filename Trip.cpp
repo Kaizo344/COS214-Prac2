@@ -18,7 +18,7 @@ void Trip::setStrategy(RouteStrategy* s)
         std::cout << "Cannot set a null route strategy." << std::endl;
         return;
     }
-    if(strategy !- nullptr)
+    if(strategy != nullptr)
     {
         delete strategy;
     }

@@ -8,6 +8,7 @@
 class DesertNPC : public NPC
 {
     public:
+        ~DesertNPC() {}
         void interact() override;
 };
 

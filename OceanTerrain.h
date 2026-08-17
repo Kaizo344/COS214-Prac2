@@ -8,6 +8,7 @@
 class OceanTerrain : public Terrain
 {
     public:
+        ~OceanTerrain() {}
         void display() override;
 };
 

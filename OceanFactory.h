@@ -7,6 +7,7 @@
 class OceanFactory : public BiomeFactory
 {
     public:
+        ~OceanFactory() {}
         NPC* createNPC() override;
         Terrain* createTerrain() override;
         Obstacle* createObstacle() override;

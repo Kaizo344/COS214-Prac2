@@ -17,7 +17,7 @@ class GameManager
         GameManager();
         ~GameManager();
         void run();
-        void setBiome();
+        void setBiome(BiomeFactory* f);
 };
 
 #endif // GAMEMANAGER_H

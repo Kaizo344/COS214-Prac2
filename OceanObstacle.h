@@ -7,7 +7,9 @@
 // Concrete Products
 class OceanObstacle : public Obstacle
 {
-    void overcome() override;
+    public:
+        ~OceanObstacle() {}
+        void overcome() override;
 };
 
 #endif // OCEANOBSTACLE_H
