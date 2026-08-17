@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "RouteStrategy.h"
 
 // Context
 class Trip

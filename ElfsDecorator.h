@@ -4,9 +4,10 @@
 #include "MapElementDecorator.h"
 
 class ElfsDecorator: public MapElementDecorator{
-    ElfsDecorator(MapElement*);
-    std::string print() override;
-    ~ElfsDecorator() override;
+    public:
+        ElfsDecorator(MapElement*);
+        std::string print() override;
+        ~ElfsDecorator() override;
 };
 
 #endif

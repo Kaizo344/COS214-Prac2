@@ -4,10 +4,11 @@
 #include "MapElementDecorator.h"
 
 class DragonDecorator: public MapElementDecorator{
-    DragonDecorator(MapElement*);
-    std::string print() override;
-    int getNumDragons();
-    ~DragonDecorator() override;
+    public:
+        DragonDecorator(MapElement*);
+        std::string print() override;
+        int getNumDragons();
+        ~DragonDecorator() override;
 };
 
 #endif

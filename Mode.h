@@ -8,7 +8,7 @@ class Mode {
     public:
         virtual void move()=0 ;
         virtual void moveFaster(Traveller*)=0;
-        virtual ~Mode();
+        virtual ~Mode(){};
 };
 
 #endif

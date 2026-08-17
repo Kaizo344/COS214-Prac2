@@ -11,7 +11,7 @@ class MapElement{
     public:
         MapElement(std::string s):name(s){};
         virtual std::string print()=0;
-        virtual ~MapElement();
+        virtual ~MapElement(){};
 };
 
 #endif
