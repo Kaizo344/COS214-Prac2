@@ -13,7 +13,7 @@ class Traveller {
     public:
         Traveller(Mode* m);
         void changeMode(Mode*);
-        void moveTravller();
+        void moveTraveller();
         void moveTravellerFaster();
         ~Traveller();
 };
