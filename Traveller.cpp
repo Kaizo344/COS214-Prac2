@@ -23,7 +23,7 @@ void Traveller::changeMode(Mode* m){
     state = m;
 }
 
-void Traveller::moveTravller(){
+void Traveller::moveTraveller(){
     state->move();
 }
 
