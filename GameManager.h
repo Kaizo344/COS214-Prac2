@@ -20,7 +20,7 @@ class GameManager
         void setBiome(BiomeFactory* f);
         void setTrip(Trip* t);
         void setTraveller(Traveller* t);
-        void setWorldRoot(Region* r)
+        void setWorldRoot(Region* r);
 };
 
 #endif // GAMEMANAGER_H
