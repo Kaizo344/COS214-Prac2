@@ -4,8 +4,12 @@
 #include "MapElement.h"
 
 class MapElementDecorator{
-    MapElement* elem;
-
-}
+    protected:
+        MapElement* elem;
+    public:
+        MapElementDecorator(MapElement*);
+        virtual std::string print()=0;
+        virtual ~MapElementDecorator();
+};
 
 #endif
