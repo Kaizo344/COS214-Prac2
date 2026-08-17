@@ -6,9 +6,11 @@ std::string Region::print(){
     std::string out = "";
 
     out += name + ": [";
-    for (MapElement* m : mapElements)
-        out += " "+m->print()+" ";
-
+    for (MapElement* m : mapElements) {
+        if (m != nullptr) {  
+            out += " " + m->print() + " ";
+        }
+    }
     out += "]\n";
 
     return out;
@@ -23,8 +25,9 @@ void Region::add(MapElement* m){
 
 Region::~Region(){
     for(MapElement* e : mapElements){
-        if (e != nullptr)
+        if (e != nullptr) {
             delete e;
+        }
     }
-
+    mapElements.clear();  
 }

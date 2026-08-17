@@ -5,10 +5,10 @@ DragonDecorator::DragonDecorator(MapElement* m, std::string s):MapElementDecorat
 
 std::string DragonDecorator::print(){
     if (elem != nullptr){
-        return std::to_string(getNumDragons()) +" Dragons can be found on this part of the map watch out";
+        return std::to_string(getNumDragons()) + " Dragons can be found here in the area(s) " + elem->print();
     }
 
-    return std::to_string(getNumDragons()) +" Dragons can be found here in the area(s) " + elem->print();
+    return std::to_string(getNumDragons()) + " Dragons can be found on this part of the map watch out";
 }
 
 int DragonDecorator::getNumDragons(){

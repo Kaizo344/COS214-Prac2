@@ -21,6 +21,7 @@ void Trip::setStrategy(RouteStrategy* s)
     if(strategy != nullptr)
     {
         delete strategy;
+        strategy = nullptr;
     }
     strategy = s;
 }

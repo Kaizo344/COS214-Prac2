@@ -5,13 +5,12 @@ MapElementDecorator::MapElementDecorator(MapElement* m, std::string s):MapElemen
         elem = nullptr;
         return;
     }
-
     elem = m;
 }
 
 MapElementDecorator::~MapElementDecorator(){
     if (elem != nullptr){
         delete elem;
+        elem = nullptr; 
     }
-
 }
