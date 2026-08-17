@@ -259,7 +259,6 @@ int main()
     world2->add(forestRegion2);
     gm->setWorldRoot(world2);
     
-    // Now run should work properly
     gm->run();
 
     delete gm; // Will delete all components including trip, traveller, worldRoot, and biomeFactory
