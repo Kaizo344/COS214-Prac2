@@ -209,8 +209,7 @@ int main()
     // Test Forest biome
     ForestFactory *forestFactory = new ForestFactory();
     gm->setBiome(forestFactory);
-    std::cout << std::endl
-              << "Forest Biome:" << std::endl;
+    std::cout << std::endl << "Forest Biome:" << std::endl;
     NPC *forestNPC = forestFactory->createNPC();
     Terrain *forestTerrain = forestFactory->createTerrain();
     Obstacle *forestObstacle = forestFactory->createObstacle();
@@ -224,8 +223,7 @@ int main()
     // Test Ocean biome
     OceanFactory *oceanFactory = new OceanFactory();
     gm->setBiome(oceanFactory);
-    std::cout << std::endl
-              << "Ocean Biome:" << std::endl;
+    std::cout << std::endl << "Ocean Biome:" << std::endl;
     NPC *oceanNPC = oceanFactory->createNPC();
     Terrain *oceanTerrain = oceanFactory->createTerrain();
     Obstacle *oceanObstacle = oceanFactory->createObstacle();
@@ -237,12 +235,34 @@ int main()
     delete oceanObstacle;
 
     // Test GameManager::run()
-    std::cout << std::endl
-              << "Testing GameManager::run():" << std::endl;
-    // GameManager needs trip, traveller, worldRoot, and biomeFactory set to run properly
+    std::cout << std::endl << "Testing GameManager::run():" << std::endl;
+    
+    // Create and set trip
+    CheapestRoute *cheapRoute = new CheapestRoute();
+    Trip *trip = new Trip(cheapRoute);
+    gm->setTrip(trip);
+    
+    // Create and set traveller
+    Foot *footMode2 = new Foot();
+    Traveller *traveller2 = new Traveller(footMode2);
+    gm->setTraveller(traveller2);
+    
+    // Create and set world
+    Region *world2 = new Region("World");
+    Region *desertRegion2 = new Region("Desert");
+    Location *oasis = new Location("Oasis");
+    desertRegion2->add(oasis);
+    world2->add(desertRegion2);
+    Region *forestRegion2 = new Region("Forest");
+    Location *clearing = new Location("Clearing");
+    forestRegion2->add(clearing);
+    world2->add(forestRegion2);
+    gm->setWorldRoot(world2);
+    
+    // Now run should work properly
     gm->run();
 
-    delete gm; // Will delete the current factory (OceanFactory)
+    delete gm; // Will delete all components including trip, traveller, worldRoot, and biomeFactory
     std::cout << std::endl;
 
     // Test MapElementDecorator with null pointer

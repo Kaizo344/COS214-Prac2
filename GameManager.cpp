@@ -42,6 +42,45 @@ void GameManager::setBiome(BiomeFactory *f)
     }
 }
 
+void GameManager::setTrip(Trip* t)
+{
+    if (trip != nullptr)
+    {
+        delete trip;
+        trip = nullptr;
+    }
+    if (t != nullptr)
+    {
+        trip = t;
+    }
+}
+
+void GameManager::setTraveller(Traveller* t)
+{
+    if (traveller != nullptr)
+    {
+        delete traveller;
+        traveller = nullptr;
+    }
+    if (t != nullptr)
+    {
+        traveller = t;
+    }
+}
+
+void GameManager::setWorldRoot(Region* r)
+{
+    if (worldRoot != nullptr)
+    {
+        delete worldRoot;
+        worldRoot = nullptr;
+    }
+    if (r != nullptr)
+    {
+        worldRoot = r;
+    }
+}
+
 void GameManager::run()
 {
     std::cout << "Wayfarer Engine Initializing..." << std::endl;
